@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -24,7 +24,7 @@ namespace Fafalymo
                     case 253:
                         var m = PluginVersion.Match(ll[2]);
                         if (m.Success)
-                            ll[2] = ll[2].Replace(m.Groups[1].Value, "1.6.2.4");
+                            ll[2] = ll[2].Replace(m.Groups[1].Value, "1.7.0.11");
                         break;
                     #endregion
 
@@ -68,7 +68,7 @@ namespace Fafalymo
                             ll[7] = GameResources.TranslateBnpName(ll[7]);
                         }
 
-                        Ability_Fix_Value(ll);
+                        // Ability_Fix_Value(ll);
                         break;
                     #endregion
 
@@ -82,7 +82,7 @@ namespace Fafalymo
                             ll[7] = GameResources.TranslateBnpName(ll[7]);
                         }
 
-                        Ability_Fix_Value(ll);
+                        // Ability_Fix_Value(ll);
                         break;
                     #endregion
 
